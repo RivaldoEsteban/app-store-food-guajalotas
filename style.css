@@ -14,7 +14,8 @@ p {
 
 .wrapper {
   max-width: 375px;
-  margin: 0 24px ;
+  margin: auto;
+  padding: 0 24px ;
 }
 
 .header {
