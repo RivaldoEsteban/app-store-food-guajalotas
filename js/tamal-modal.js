@@ -53,10 +53,15 @@ saborPasasTamal.addEventListener('click', () => {
   saborPasasTamal.style.opacity = '1'
   tamalImage.src = '../images/tamal-verde.png'
 })
+saborRajasTamal.addEventListener('click', () => {
+  saboresTamalOpacity()
+  saborRajasTamal.style.opacity = '1'
+  tamalImage.src = '../images/tamal-verde.png'
+})
 
 
 function saboresTamalOpacity (){
-  saborGuayaba.style.opacity = '.5'
+  saborGuayabaTamal.style.opacity = '.5'
   saborVerdeTamal.style.opacity = '.5'
   saborMoleTamal.style.opacity = '.5'
   saborRajasTamal.style.opacity = '.5'
