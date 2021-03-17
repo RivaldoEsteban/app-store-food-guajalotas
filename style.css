@@ -22,6 +22,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .hero-content {
@@ -53,6 +54,7 @@ p {
   display : flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  height: 24px;
 }
 
 .list-products p {
@@ -66,7 +68,7 @@ p {
   color:  #FA4A0C;
 }
 
-.products-all {
+.guajolotas-all {
   margin-bottom: 50px;
 }
 
@@ -91,4 +93,169 @@ p {
 .product-price {
   margin: 0;
   color: #FA4A0C;
+}
+
+.header.header-products {
+  align-items: flex-start;
+  margin-top: 44px;
+}
+
+.hero-title-content {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+#product-name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0;
+}
+
+#product-price-agregado {
+  color: #FA4A0C;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 8px auto 32px;
+}
+
+.add-product-btn {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  padding: 10px 12px;
+  background: white;
+  margin: auto auto 40px auto;
+  border-radius: 20px;
+}
+
+.number-products {
+  margin: 0 32px ;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#saborMole {
+  margin: 0 52px;
+}
+
+#saborPasas{
+  margin: 0 52px;
+}
+
+.sabores {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.combo-description {
+  font-size: 15px;
+  margin: 10px 0 24px;
+  opacity: .5;
+}
+
+.bebida {
+  background: white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 16px;
+  width: 159px;
+}
+.bebida-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bebida-name{
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.bebida-price {
+  color: #FA4A0C;
+  font-size: 12px;
+  margin: 5px 0 0 0 ;
+}
+
+.checkbox {
+  margin-left: 35px;
+  padding: 10px;
+}
+
+.combo-bebidas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.btn-buy-products {
+  margin: 40px 0 20px;
+  display: flex;
+  padding: 0 24px;
+  width: 300px;
+  justify-content: space-between;
+  position: sticky;
+  left: 40px;
+  bottom: 20px;
+  background: #FA4A0C;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-txt {
+  font-size: 17px;
+  margin: auto 0;
+}
+
+.btn-final-price {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.escogiendo {
+  opacity: .5;
+  margin: 5px 0 24px;
+  font-size: 15px;
+}
+
+.sabores-guajalota h4 {
+  margin: 0;
+}
+
+.page-guajolotas-products {
+  display: none;
+}
+
+.page-bebidas-products {
+  display: none;
+}
+
+.page-tamales-products {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.bebidas-all {
+  display: none;
+}
+
+.tamales-all {
+  display: none;
+}
+
+.medio {
+  margin: 0 60px;
 }
