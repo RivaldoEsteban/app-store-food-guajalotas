@@ -14,7 +14,7 @@
     <section class="page-principal" id="page-principal">
       <header class="header">
         <img src="images/logo.png" alt="" width="64px" height="64px" alt="logo">
-        <img src="images/comprar.png" alt="carrito-compras">
+        <img src="images/comprar.png" alt="carrito-compras" id="carrito-compras">
       </header>
       <main>
         <section class="hero-content">
@@ -137,7 +137,7 @@
       <header class="header header-products">
         <img src="images/left.png" alt="icon-arrow-left" id="arrow-left">
         <img src="images/verde.png" alt="" width="200px" id="header-img-guajalota">
-        <img src="images/comprar.png" alt="">
+        <img src="images/comprar.png" alt="" id="buy-cart-guajolotas">
       </header>
       <div class="hero-title-content">
         <p id="product-name"> Guajolota de <br> Tamal Verde </p>
@@ -145,7 +145,7 @@
       </div>
       <div class="add-product-btn">
         <img src="images/menos.png" alt="" id="quitar">
-        <p class="number-products" id="number-products">1</p>
+        <p class="number-products" id="number-products">0</p>
         <img src="images/mas.png" alt="" id="agregar">
       </div>
       <div class="sabores-guajalota">
@@ -206,16 +206,16 @@
           </div>
         </div>
       </div>
-      <button class="btn-buy-products">
+      <button class="btn-buy-products" id="btn-guajolota">
         <p class="btn-txt">Agregar al carrito</p>
-        <p class="btn-final-price">$ <b id="btn-price">25</b>.00</p>
+        <p class="btn-final-price">$ <b id="btn-price">0</b>.00</p>
       </button>
     </section>
     <section class="page-bebidas-products" id="page-bebidas-products">
       <header class="header header-products">
         <img src="images/left.png" alt="icon-arrow-left" id="arrow-left-bebidas">
         <img src="images/cham1.png" alt="" width="200px" id="header-img-bebida">
-        <img src="images/comprar.png" alt="">
+        <img src="images/comprar.png" alt="" id="buy-cart-bebidas">
       </header>
       <div class="hero-title-content">
         <p id="product-name"> Bebidas <br> de la casa</p>
@@ -223,7 +223,7 @@
       </div>
       <div class="add-product-btn">
         <img src="images/menos.png" alt="" id="quitar-bebidas">
-        <p class="number-products" id="number-products-bebidas">1</p>
+        <p class="number-products" id="number-products-bebidas">0</p>
         <img src="images/mas.png" alt="" id="agregar-bebidas">
       </div>
       <div class="sabores-guajalota">
@@ -294,16 +294,16 @@
           </div>
         </div>
       </div>
-      <button class="btn-buy-products">
+      <button class="btn-buy-products" id="btn-bebidas">
         <p class="btn-txt">Agregar al carrito</p>
-        <p class="btn-final-price">$ <b id="btn-price-bebidas">12</b>.00</p>
+        <p class="btn-final-price">$ <b id="btn-price-bebidas">0</b>.00</p>
       </button>
     </section>
     <section class="page-tamales-products" id="page-tamales-products">
       <header class="header header-products">
         <img src="images/left.png" alt="icon-arrow-left" id="arrow-left-tamales">
         <img src="images/tamal-mole.png" alt="" width="200px" id="header-img-tamal">
-        <img src="images/comprar.png" alt="">
+        <img src="images/comprar.png" alt="" id="buy-cart-tamales">
       </header>
       <div class="hero-title-content">
         <p id="product-name"> Tamales de <br> la casa</p>
@@ -311,7 +311,7 @@
       </div>
       <div class="add-product-btn">
         <img src="images/menos.png" alt="" id="quitar-tamal">
-        <p class="number-products" id="number-products-tamal">1</p>
+        <p class="number-products" id="number-products-tamal">0</p>
         <img src="images/mas.png" alt="" id="agregar-tamal">
       </div>
       <div class="sabores-guajalota">
@@ -372,16 +372,60 @@
           </div>
         </div>
       </div>
-      <button class="btn-buy-products">
+      <button class="btn-buy-products" id="btn-tamales-1">
         <p class="btn-txt">Agregar al carrito</p>
-        <p class="btn-final-price">$ <b id="btn-price-tamal">14</b>.00</p>
+        <p class="btn-final-price">$ <b id="btn-price-tamal">0</b>.00</p>
       </button>
     </section>
+    <section class="page-shopping-cart" id="page-shopping-cart">
+      <div class="header-cart">
+        <img src="images/left.png" alt="" id="arrow-left-section-buy">
+        <p>Carrito</p>
+      </div>
+      <div class="buy-all-products" id="buyAllProducts1">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts2">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts3">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts4">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts5">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts6">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts7">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts8">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts9">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts10">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts11">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts12">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts13">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts14">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts15">
+      </div>
+      <div class="buy-all-products" id="buyAllProducts16">
+      </div>
+      <button class="btn-total">
+        <p>Total</p>
+        <p>$ <b id="btn-precio-pagar">0</b> MXN</p>
+      </button>
+      <button class="btn-price" id="buttonBuyCart">Pagar</button>
+    </section>
   </div>
-  <script src="./js/change-page.js"></script>
-  <script src="./js/guajolota-modal.js"></script>
-  <script src="./js/products.js"></script>
-  <script src="./js/bebidas-modal.js"></script>
-  <script src="./js/tamal-modal.js"></script>
+  <script src="./js/change-page.js" type="module"></script>
+  <script src="./js/products.js" type="module"></script>
+  <script src="./js/guajolota-modal.js" type="module"></script>
+  <script src="./js/bebidas-modal.js" type="module"></script>
+  <script src="./js/tamal-modal.js" type="module"></script>
+  <script src="./js/final-sale.js" type="module"></script>
 </body>
 </html>

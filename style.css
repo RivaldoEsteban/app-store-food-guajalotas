@@ -32,6 +32,9 @@ p {
 .hero-title {
   font-size: 34px;
   line-height: 41px;
+  color: #ff956e;
+  text-align: center;
+  text-shadow: 2px 2px  2px #a73c15;
 }
 
 .hero-btn {
@@ -61,6 +64,7 @@ p {
   margin: 0;
   font-size: 17px;
   color:#9A9A9D;
+  text-shadow: 2px 2px 2px rgb(255, 254, 254);
 }
 
 .list-products p:hover {
@@ -148,6 +152,7 @@ p {
 .sabores {
   display: flex;
   margin-bottom: 48px;
+  justify-content: center;
 }
 
 .combo-description {
@@ -188,14 +193,14 @@ p {
 .combo-bebidas {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .btn-buy-products {
   margin: 40px 0 20px;
   display: flex;
   padding: 0 24px;
-  width: 300px;
+  width: 100%;
   justify-content: space-between;
   position: sticky;
   left: 40px;
@@ -222,6 +227,11 @@ p {
   opacity: .5;
   margin: 5px 0 24px;
   font-size: 15px;
+}
+
+.sabores-content {
+  width: 100%;
+  text-align: center;
 }
 
 .sabores-guajalota h4 {
@@ -258,4 +268,93 @@ p {
 
 .medio {
   margin: 0 60px;
+}
+
+.page-shopping-cart {
+  display: none;
+  height: 100vh;
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.header-cart p {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.description-product{
+  margin-left: 10px;
+  width: 161px;
+}
+
+.desciption-name {
+  font-size: 14px;
+}
+
+.precio-product {
+  color: #FA4A0C;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+#cantidad-products {
+  color: #FA4A0C;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.buy-all-products {
+  margin-bottom: 20px;
+}
+
+.btn-price {
+  background: #FA4A0C;
+  border: none;
+  width: 100%;
+  padding: 20px 24px;
+  color: white;
+  border-radius: 25px;
+  bottom: 10px;
+  position: sticky;
+  /* top: 0; */
+  text-align: center;
+  font-size: 20px;
+}
+
+.icon {
+  border: 2px solid blue;
+  padding: 5px 8px 5px 5px;
+}
+
+.btn-total {
+  display: flex;
+  border: none;
+  background: rgb(224, 175, 175);
+  width: 100%;
+  margin: 20px 0;
+  justify-content: space-between;
+  padding: 1px 12px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  position: sticky;
+  bottom: 80px;
+  font-size: 16px;
 }
