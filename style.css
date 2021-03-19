@@ -294,7 +294,7 @@ p {
   align-items: center;
   background: white;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px 10px 0px 10px;
   justify-content: space-between;
 }
 
@@ -357,4 +357,16 @@ p {
   position: sticky;
   bottom: 80px;
   font-size: 16px;
+}
+
+.closed {
+  position: relative;
+  width: 17px;
+  bottom: 45px;
+  left: 60px;
+}
+
+.closed:hover {
+  border: 1px solid red ;
+  padding: 3px;
 }

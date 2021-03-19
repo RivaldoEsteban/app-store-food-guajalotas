@@ -36,7 +36,13 @@ saborChampurrado.addEventListener('click', () => {
   saborChampurrado.style.opacity = '1'
   imageBebida.src = '../images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('champurrado', 'Champurrado', cantidadBebidas.textContent, precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('champurrado', 'Champurrado', cantidadBebidas.textContent, precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 const saborAroozLeche = document.getElementById('sabor-arroz')
@@ -45,7 +51,13 @@ saborAroozLeche.addEventListener('click', () => {
   saborAroozLeche.style.opacity = '1'
   imageBebida.src = '../images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('arroz', 'Atole de Arroz con Leche', cantidadBebidas.textContent, precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('arroz', 'Atole de Arroz con Leche', cantidadBebidas.textContent, precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 const saborChocolate = document.getElementById('sabor-chocolate')
@@ -54,7 +66,13 @@ saborChocolate.addEventListener('click', () => {
   saborChocolate.style.opacity = '1'
   imageBebida.src = '../images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('chocolate', 'Chocolate caliente', cantidadBebidas.textContent, precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('chocolate', 'Chocolate caliente', cantidadBebidas.textContent, precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 const saborPiña = document.getElementById('sabor-piña')
@@ -63,7 +81,13 @@ saborPiña.addEventListener('click', () => {
   saborPiña.style.opacity = '1'
   imageBebida.src = '../images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('arroz', 'Bebida de Piña', cantidadBebidas.textContent, precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('arroz', 'Bebida de Piña', cantidadBebidas.textContent, precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 const saborCafe = document.getElementById('sabor-cafe')
@@ -72,7 +96,13 @@ saborCafe.addEventListener('click', () => {
   saborCafe.style.opacity = '1'
   imageBebida.src = '../images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('cafe', 'Café caliente', cantidadBebidas.textContent, precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('cafe', 'Café caliente', cantidadBebidas.textContent, precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 const saborGuayabaB = document.getElementById('sabor-guayaba')
@@ -81,7 +111,13 @@ saborGuayabaB.addEventListener('click', () => {
   saborGuayabaB.style.opacity = '1'
   imageBebida.src = '../images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
-  window.buyAllProducts6.innerHTML = printElementBebidas('cafe', 'Chocolate caliente', cantidadBebidas.textContent,precio)
+  const product6 = document.getElementById('buyAllProducts6')
+  product6.innerHTML = printElementBebidas('cafe', 'Chocolate caliente', cantidadBebidas.textContent,precio)
+  product6.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+    product6.innerHTML = ''
+  })
 })
 
 //guajocombo / agregar un sabor de guajolota
@@ -91,10 +127,16 @@ checkboxVerde.addEventListener('click', () => {
   const priceDrink = 25
   if (checkboxVerde.checked == true) {
   precioFinal.textContent = Number(precioFinal.textContent) + priceDrink
-  window.buyAllProducts7.innerHTML = printElementBebidas('g-verde', 'Guajolota de Tamal de Rajas', 1, 25)
+  const product7 = document.getElementById('buyAllProducts7')
+  product7.innerHTML = printElementBebidas('g-verde', 'Guajolota de Tamal de Rajas', 1, 25)
+  product7.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 25
+    product7.innerHTML = ''
+  })
   } else if (checkboxVerde.checked == false) {
   precioFinal.textContent = Number(precioFinal.textContent) - priceDrink
-  window.buyAllProducts7.innerHTML = ''
+  product7.innerHTML = ''
   }
 })
 
@@ -103,11 +145,16 @@ checkboxMole.addEventListener('click', () => {
   const priceDrink = 25
   if (checkboxMole.checked == true) {
   precioFinal.textContent = Number(precioFinal.textContent) + priceDrink
-    window.buyAllProducts8.innerHTML = printElementBebidas('g-mole', 'Guajolota de Tamal de Mole', 1, 25)
-
+  const product8 = document.getElementById('buyAllProducts7')
+  product8.innerHTML = printElementBebidas('g-mole', 'Guajolota de Tamal de Mole', 1, 25)
+  product8.addEventListener('click', () => {
+      let cobrar = document.getElementById('btn-precio-pagar')
+      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 25
+      product8.innerHTML = ''
+  })
   } else if (checkboxMole.checked == false) {
   precioFinal.textContent = Number(precioFinal.textContent) - priceDrink
-  window.buyAllProducts8.innerHTML = ''
+  product8.innerHTML = ''
   }
 })
 
@@ -116,10 +163,16 @@ checkboxGuayaba.addEventListener('click', () => {
   const priceDrink = 25
   if (checkboxGuayaba.checked == true) {
   precioFinal.textContent = Number(precioFinal.textContent) + priceDrink
-  window.buyAllProducts9.innerHTML = printElementBebidas('g-guayaba', 'Guajolota de Tamal de Guayaba', 1, 25)
+  const product9 = document.getElementById('buyAllProducts7')
+  product9.innerHTML = printElementBebidas('g-guayaba', 'Guajolota de Tamal de Guayaba', 1, 25)
+  product9.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 25
+    product9.innerHTML = ''
+  })
   } else if (checkboxGuayaba.checked == false) {
   precioFinal.textContent = Number(precioFinal.textContent) - priceDrink
-  window.buyAllProducts9.innerHTML = ''
+  product9.innerHTML = ''
   }
 })
 
@@ -128,10 +181,16 @@ checkboxPina.addEventListener('click', () => {
   const priceDrink = 25
   if (checkboxPina.checked == true) {
   precioFinal.textContent = Number(precioFinal.textContent) + priceDrink
-  window.buyAllProducts10.innerHTML = printElementBebidas('g-pina', 'Guajolota de Tamal de Piña', 1 , 25)
+  const product10 = document.getElementById('buyAllProducts7')
+  product10.innerHTML = printElementBebidas('g-pina', 'Guajolota de Tamal de Piña', 1 , 25)
+  product10.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 25
+    product10.innerHTML = ''
+   })
   } else if (checkboxPina.checked == false) {
   precioFinal.textContent = Number(precioFinal.textContent) - priceDrink
-  window.buyAllProducts10.innerHTML = ''
+  product10.innerHTML = ''
   }
 })
 
@@ -140,24 +199,31 @@ checkboxPasas.addEventListener('click', () => {
   const priceDrink = 25
   if (checkboxPasas.checked == true) {
   precioFinal.textContent = Number(precioFinal.textContent) + priceDrink
-  window.buyAllProducts11.innerHTML = printElementBebidas('g-pasas', 'Guajolota de Tamal de Pasas', 1 , 25)
+  const product11 = document.getElementById('buyAllProducts7')
+  product11.innerHTML = printElementBebidas('g-pasas', 'Guajolota de Tamal de Pasas', 1 , 25)
+  product11.addEventListener('click', () => {
+    let cobrar = document.getElementById('btn-precio-pagar')
+    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 25
+    product11.innerHTML = ''
+   })
   } else if (checkboxPasas.checked == false) {
   precioFinal.textContent = Number(precioFinal.textContent) - priceDrink
-  window.buyAllProducts11.innerHTML = ''
+  product11.innerHTML = ''
   }
 })
 
 
 function printElementBebidas (img, name, cantidad, precio) {
   return `
-    <div class="product">
-      <img src="images/${img}.png" alt="" width="100px">
-      <div class="description-product">
-        <p class="desciption-name">${name}</p>
-        <p class="cantidad-product">Cantidad: <b id="cantidad-products">${cantidad}</b></p>
-      </div>
-      <p class="precio-product">$ <b id="final-price-product">${precio}</b></p>
+  <div class="product" id='producto'>
+    <img src="images/${img}.png" alt="" width="100px">
+    <div class="description-product">
+      <p class="desciption-name">${name}</p>
+      <p class="cantidad-product">Cantidad: <b id="cantidad-products">${cantidad}</b></p>
     </div>
+    <img src="images/closed.png" alt="" class="closed" id="closed">
+    <p class="precio-product">$ <b id="final-price-product">${precio}</b></p>
+  </div>
   `
 }
 
