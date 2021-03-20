@@ -260,10 +260,12 @@ p {
 
 .bebidas-all {
   display: none;
+  margin-bottom: 50px;
 }
 
 .tamales-all {
   display: none;
+  margin-bottom: 50px;
 }
 
 .medio {
@@ -370,3 +372,5 @@ p {
   border: 1px solid red ;
   padding: 3px;
 }
+
+.bebidas-all {}
