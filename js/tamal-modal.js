@@ -34,9 +34,7 @@ saborVerdeTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('ver2', 'Tamal Verde', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -49,9 +47,7 @@ saborMoleTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('mole2', 'Tamal de Mole', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -64,9 +60,7 @@ saborGuayabaTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-gua', 'Tamal de Guayaba', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -79,9 +73,7 @@ saborPinaTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-pina', 'Tamal de Piña', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -94,9 +86,7 @@ saborPasasTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-pasas', 'Tamal de Pasas', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -109,9 +99,7 @@ saborRajasTamal.addEventListener('click', () => {
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('mole2', 'Tamal de Rajas', cantidadTamal.textContent, precio)
   product12.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    product12.innerHTML = ''
+    closedProduct('12')
   })
 })
 
@@ -127,6 +115,7 @@ comboChampurrado.addEventListener('click', () => {
     product13.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
       cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      btnTamal.textContent = Number(btnTamal.textContent) - priceDrink
       product13.innerHTML = ''
     })
   } else if (comboChampurrado.checked == false) {
@@ -145,6 +134,7 @@ comboAtole.addEventListener('click', () => {
     product14.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
       cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      btnTamal.textContent = Number(btnTamal.textContent) - priceDrink
       product14.innerHTML = ''
     })
   } else if (comboAtole.checked == false) {
@@ -163,6 +153,7 @@ comboChocolate.addEventListener('click', () => {
     product15.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
       cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      btnTamal.textContent = Number(btnTamal.textContent) - priceDrink
       product15.innerHTML = ''
     })
   } else if (comboChocolate.checked == false) {
@@ -181,6 +172,7 @@ comboCafe.addEventListener('click', () => {
     product16.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
       cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      btnTamal.textContent = Number(btnTamal.textContent) - priceDrink
       product16.innerHTML = ''
     })
   } else if (comboCafe.checked == false) {
@@ -214,9 +206,30 @@ function saboresTamalOpacity() {
   saborPasasTamal.style.opacity = '.5'
 }
 
+function saboresTamalOpacity1() {
+  saborGuayabaTamal.style.opacity = '1'
+  saborVerdeTamal.style.opacity = '1'
+  saborMoleTamal.style.opacity = '1'
+  saborRajasTamal.style.opacity = '1'
+  saborPinaTamal.style.opacity = '1'
+  saborPasasTamal.style.opacity = '1'
+}
+
 const buttonTamales = document.getElementById('btn-tamales-1')
 
 buttonTamales.addEventListener('click' , () => {
   let cobrarTamales = document.getElementById('btn-precio-pagar')
   cobrarTamales.textContent = Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)
 })
+
+
+export function closedProduct(id) {
+  const producto1 = document.getElementById(`buyAllProducts${id}`)
+  let precio = Number(cantidadTamal.textContent) * 14
+  let cobrar = document.getElementById('btn-precio-pagar')
+  cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+  precioFinal.textContent = Number(precioFinal.textContent) - precio
+  cantidadTamal.textContent = 0
+  saboresTamalOpacity1()
+  producto1.innerHTML = ''
+}

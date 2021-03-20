@@ -14,7 +14,7 @@ mas.addEventListener('click', () =>{
 })
 
 menos.addEventListener('click', () => {
-  if (Number(cantidadProducts.textContent) > 1) {
+  if (Number(cantidadProducts.textContent) > 0) {
     cantidadProducts.innerHTML = Number(cantidadProducts.textContent) - 1
     priceButton.innerHTML = Number(priceButton.textContent) - 25
   }
@@ -32,9 +32,7 @@ saborVerde.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-verde', 'Guajolota de Tamal Verde', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) -  precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
@@ -47,9 +45,7 @@ saborMole.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-mole', 'Guajolota de Tamal de Mole', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
@@ -62,9 +58,7 @@ saborRajas.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-guayaba', 'Guajolota de Tamal de Rajas', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
@@ -77,9 +71,7 @@ saborPina.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-pina', 'Guajolota de Tamal de Piña', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
@@ -92,9 +84,7 @@ saborPasas.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-pasas', 'Guajolota de Tamal de Pasas', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
@@ -107,23 +97,24 @@ saborGuayaba.addEventListener('click', () => {
   const producto1 = document.getElementById('buyAllProducts1')
   producto1.innerHTML = printElementGuajolota('g-guayaba', 'Guajolota de Tamal de Guayaba', cantidadProducts.textContent, precio)
   producto1.addEventListener('click', () => {
-    let cobrar = document.getElementById('btn-precio-pagar')
-    cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
-    producto1.innerHTML = ''
+    closedProduct('1')
   })
 })
 
+
 //checkbox - section/guajolotas
+
 const checkboxChampurrado = document.getElementById('checkbox-champurrado')
 checkboxChampurrado.addEventListener('click', () => {
   const priceDrink = 12
   const producto2 = document.getElementById('buyAllProducts2')
   if (checkboxChampurrado.checked == true) {
     priceButton.textContent = Number(priceButton.textContent) + priceDrink
-    producto2.innerHTML = printElementGuajolota('champurrado', 'Champurrado', 1, 12)
+    producto2.innerHTML = printElementGuajolota('champurrado', 'Champurrado', 1, priceDrink)
     producto2.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
-      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
+      priceButton.textContent = Number(priceButton.textContent) - priceDrink
       producto2.innerHTML = ''
     })
   } else if (checkboxChampurrado.checked == false) {
@@ -136,13 +127,14 @@ const checkboxAtole = document.getElementById('checkbox-atole')
 checkboxAtole.addEventListener('click', () => {
   const priceDrink = 12
   const producto3 = document.getElementById('buyAllProducts3')
-  if (checkboxAtole.checked == true) {
+  if(checkboxAtole.checked == true) {
     priceButton.textContent = Number(priceButton.textContent) + priceDrink
-    producto3.innerHTML = printElementGuajolota('arroz', 'Atole de Arroz', 1, 12)
+    producto3.innerHTML = printElementGuajolota('arroz', 'Atole de Arroz', 1, priceDrink)
     producto3.addEventListener('click', () => {
-      let cobrar = document.getElementById('btn-precio-pagar')
-      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      let cobrar1 = document.getElementById('btn-precio-pagar')
       producto3.innerHTML = ''
+      cobrar1.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
+      priceButton.textContent = Number(priceButton.textContent) - priceDrink
     })
   } else if (checkboxAtole.checked == false) {
     priceButton.textContent = Number(priceButton.textContent) - priceDrink
@@ -156,10 +148,11 @@ checkboxChocolate.addEventListener('click', () => {
   const producto4 = document.getElementById('buyAllProducts4')
   if (checkboxChocolate.checked == true) {
     priceButton.textContent = Number(priceButton.textContent) + priceDrink
-    producto4.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, 12)
+    producto4.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, priceDrink)
     producto4.addEventListener('click', () => {
-      let cobrar = document.getElementById('btn-precio-pagar')
-      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      let cobrar2 = document.getElementById('btn-precio-pagar')
+      cobrar2.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
+      priceButton.textContent = Number(priceButton.textContent) - priceDrink
       producto4.innerHTML = ''
     })
   } else if (checkboxChocolate.checked == false) {
@@ -175,10 +168,11 @@ checkboxCafe.addEventListener('click', () => {
   const producto5 = document.getElementById('buyAllProducts5')
   if (checkboxCafe.checked == true) {
     priceButton.textContent = Number(priceButton.textContent) + priceDrink
-    producto5.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, 12)
+    producto5.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, priceDrink)
     producto5.addEventListener('click', () => {
-      let cobrar = document.getElementById('btn-precio-pagar')
-      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      let cobrar5 = document.getElementById('btn-precio-pagar')
+      cobrar5.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
+      priceButton.textContent = Number(priceButton.textContent) - priceDrink
       producto5.innerHTML = ''
     })
   } else if (checkboxCafe.checked == false) {
@@ -187,7 +181,8 @@ checkboxCafe.addEventListener('click', () => {
   }
 })
 
-
+//funcion que imprime un div con todos los elementos necesarios , en este ejercio ese div se pinta con cada peticion del producto
+// se imprime en final-sale.js
 function printElementGuajolota(img, name, cantidad, precio) {
   return`
     <div class="product" id='producto'>
@@ -212,6 +207,15 @@ function guajalotas() {
   saborGuayaba.style.opacity = '.5'
 }
 
+export  function guajalotasProduct() {
+  saborVerde.style.opacity = '1'
+  saborMole.style.opacity = '1'
+  saborRajas.style.opacity = '1'
+  saborPina.style.opacity = '1'
+  saborPasas.style.opacity = '1'
+  saborGuayaba.style.opacity = '1'
+}
+
 // pinta la sumatoria del precio total de cada seccion y lo lleva al modal final-sal.js / button
 const btnGuajolota = document.getElementById('btn-guajolota')
 btnGuajolota.addEventListener('click', () => {
@@ -219,3 +223,13 @@ btnGuajolota.addEventListener('click', () => {
   cobrar.textContent = Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)
 })
 
+export function closedProduct(id) {
+  const producto1 = document.getElementById(`buyAllProducts${id}`)
+  let precio = Number(cantidadProducts.textContent) * 25
+  let cobrar = document.getElementById('btn-precio-pagar')
+  cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - precio
+  priceButton.textContent = Number(priceButton.textContent) - precio
+  cantidadProducts.textContent = 0
+  guajalotasProduct()
+  producto1.innerHTML = ''
+}
