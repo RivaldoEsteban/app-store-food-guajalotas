@@ -29,7 +29,7 @@ const saborVerdeTamal = document.getElementById('saborVerdeTamal')
 saborVerdeTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborVerdeTamal.style.opacity = '1'
-  tamalImage.src = '../images/ver2.png'
+  tamalImage.src = 'images/ver2.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('ver2', 'Tamal Verde', cantidadTamal.textContent, precio)
@@ -42,7 +42,7 @@ const saborMoleTamal = document.getElementById('saborMoleTamal')
 saborMoleTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborMoleTamal.style.opacity = '1'
-  tamalImage.src = '../images/tamal-gua.png'
+  tamalImage.src = 'images/tamal-gua.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('mole2', 'Tamal de Mole', cantidadTamal.textContent, precio)
@@ -55,7 +55,7 @@ const saborGuayabaTamal = document.getElementById('saborGuayabaTamal')
 saborGuayabaTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborGuayabaTamal.style.opacity = '1'
-  tamalImage.src = '../images/tamal-gua.png'
+  tamalImage.src = 'images/tamal-gua.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-gua', 'Tamal de Guayaba', cantidadTamal.textContent, precio)
@@ -68,7 +68,7 @@ const saborPinaTamal = document.getElementById('saborPinaTamal')
 saborPinaTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborPinaTamal.style.opacity = '1'
-  tamalImage.src = '../images/tamal-pina.png'
+  tamalImage.src = 'images/tamal-pina.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-pina', 'Tamal de Piña', cantidadTamal.textContent, precio)
@@ -81,7 +81,7 @@ const saborPasasTamal = document.getElementById('saborPasasTamal')
 saborPasasTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborPasasTamal.style.opacity = '1'
-  tamalImage.src = '../images/tamal-pasas.png'
+  tamalImage.src = 'images/tamal-pasas.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('tamal-pasas', 'Tamal de Pasas', cantidadTamal.textContent, precio)
@@ -94,7 +94,7 @@ const saborRajasTamal = document.getElementById('saborRajasTamal')
 saborRajasTamal.addEventListener('click', () => {
   saboresTamalOpacity()
   saborRajasTamal.style.opacity = '1'
-  tamalImage.src = '../images/mole2.png'
+  tamalImage.src = 'images/mole2.png'
   const precio = Number(cantidadTamal.textContent) * 14
   const product12 = document.getElementById('buyAllProducts12')
   product12.innerHTML =printElementTamales('mole2', 'Tamal de Rajas', cantidadTamal.textContent, precio)
