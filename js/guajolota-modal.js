@@ -115,6 +115,7 @@ checkboxChampurrado.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
       cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
       priceButton.textContent = Number(priceButton.textContent) - priceDrink
+
       producto2.innerHTML = ''
     })
   } else if (checkboxChampurrado.checked == false) {
@@ -207,7 +208,7 @@ function guajalotas() {
   saborGuayaba.style.opacity = '.5'
 }
 
-export  function guajalotasProduct() {
+  function guajalotasProduct() {
   saborVerde.style.opacity = '1'
   saborMole.style.opacity = '1'
   saborRajas.style.opacity = '1'
@@ -223,7 +224,7 @@ btnGuajolota.addEventListener('click', () => {
   cobrar.textContent = Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)
 })
 
-export function closedProduct(id) {
+function closedProduct(id) {
   const producto1 = document.getElementById(`buyAllProducts${id}`)
   let precio = Number(cantidadProducts.textContent) * 25
   let cobrar = document.getElementById('btn-precio-pagar')
