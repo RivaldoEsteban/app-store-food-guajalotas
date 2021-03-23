@@ -109,17 +109,16 @@ checkboxChampurrado.addEventListener('click', () => {
   const priceDrink = 12
   const producto2 = document.getElementById('buyAllProducts2')
   if (checkboxChampurrado.checked == true) {
-    priceButton.textContent = Number(priceButton.textContent) + priceDrink
-    producto2.innerHTML = printElementGuajolota('champurrado', 'Champurrado', 1, priceDrink)
+    priceButton.textContent = Number(priceButton.textContent) + 12
+    producto2.innerHTML = printElementGuajolota('champurrado', 'Champurrado', 1 , 12)
     producto2.addEventListener('click', () => {
       let cobrar = document.getElementById('btn-precio-pagar')
-      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
-      priceButton.textContent = Number(priceButton.textContent) - priceDrink
-
+      cobrar.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
+      // priceButton.textContent = Number(priceButton.textContent) - 12
       producto2.innerHTML = ''
     })
   } else if (checkboxChampurrado.checked == false) {
-    priceButton.textContent = Number(priceButton.textContent) - priceDrink
+    priceButton.textContent = Number(priceButton.textContent) - 12
     producto2.innerHTML = ''
   }
 })
@@ -134,8 +133,7 @@ checkboxAtole.addEventListener('click', () => {
     producto3.addEventListener('click', () => {
       let cobrar1 = document.getElementById('btn-precio-pagar')
       producto3.innerHTML = ''
-      cobrar1.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
-      priceButton.textContent = Number(priceButton.textContent) - priceDrink
+      cobrar1.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
     })
   } else if (checkboxAtole.checked == false) {
     priceButton.textContent = Number(priceButton.textContent) - priceDrink
@@ -152,8 +150,7 @@ checkboxChocolate.addEventListener('click', () => {
     producto4.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, priceDrink)
     producto4.addEventListener('click', () => {
       let cobrar2 = document.getElementById('btn-precio-pagar')
-      cobrar2.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
-      priceButton.textContent = Number(priceButton.textContent) - priceDrink
+      cobrar2.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
       producto4.innerHTML = ''
     })
   } else if (checkboxChocolate.checked == false) {
@@ -172,8 +169,7 @@ checkboxCafe.addEventListener('click', () => {
     producto5.innerHTML = printElementGuajolota('chocolate', 'Chocolate caliente', 1, priceDrink)
     producto5.addEventListener('click', () => {
       let cobrar5 = document.getElementById('btn-precio-pagar')
-      cobrar5.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - priceDrink
-      priceButton.textContent = Number(priceButton.textContent) - priceDrink
+      cobrar5.textContent = (Number(priceButton.textContent) + Number(precioFinal.textContent) + Number(btnTamal.textContent)) - 12
       producto5.innerHTML = ''
     })
   } else if (checkboxCafe.checked == false) {

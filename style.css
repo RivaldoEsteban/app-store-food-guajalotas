@@ -67,11 +67,6 @@ p {
   text-shadow: 2px 2px 2px rgb(255, 254, 254);
 }
 
-.list-products p:hover {
-  border-bottom: 2px solid  #FA4A0C ;
-  color:  #FA4A0C;
-}
-
 .guajolotas-all {
   margin-bottom: 50px;
 }
@@ -111,6 +106,20 @@ p {
 }
 
 #product-name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0;
+}
+
+#product-name-bebidas {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0;
+}
+
+#product-name-tamal {
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
@@ -373,4 +382,12 @@ p {
   padding: 3px;
 }
 
-.bebidas-all {}
+.list-products p.border {
+  border-bottom: 2px solid  #FA4A0C ;
+  color:  #FA4A0C;
+}
+
+.list-products p.border-hidden {
+  border-bottom: 0 ;
+  color:  #9A9A9D;
+}

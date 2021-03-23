@@ -31,7 +31,7 @@ const saborChampurrado = document.getElementById('sabor-champurrado')
 saborChampurrado.addEventListener('click', () => {
   chooseDrinks()
   saborChampurrado.style.opacity = '1'
-  imageBebida.src = '../images/cham1.png'
+  imageBebida.src = 'images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('champurrado', 'Champurrado', cantidadBebidas.textContent, precio)
@@ -44,7 +44,7 @@ const saborAroozLeche = document.getElementById('sabor-arroz')
 saborAroozLeche.addEventListener('click', () => {
   chooseDrinks()
   saborAroozLeche.style.opacity = '1'
-  imageBebida.src = '../images/arro1.png'
+  imageBebida.src = 'images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('arroz', 'Atole de Arroz con Leche', cantidadBebidas.textContent, precio)
@@ -57,7 +57,7 @@ const saborChocolate = document.getElementById('sabor-chocolate')
 saborChocolate.addEventListener('click', () => {
   chooseDrinks()
   saborChocolate.style.opacity = '1'
-  imageBebida.src = '../images/cham1.png'
+  imageBebida.src = 'images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('chocolate', 'Chocolate caliente', cantidadBebidas.textContent, precio)
@@ -70,7 +70,7 @@ const saborPiña = document.getElementById('sabor-piña')
 saborPiña.addEventListener('click', () => {
   chooseDrinks()
   saborPiña.style.opacity = '1'
-  imageBebida.src = '../images/arro1.png'
+  imageBebida.src = 'images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('arroz', 'Bebida de Piña', cantidadBebidas.textContent, precio)
@@ -83,7 +83,7 @@ const saborCafe = document.getElementById('sabor-cafe')
 saborCafe.addEventListener('click', () => {
   chooseDrinks()
   saborCafe.style.opacity = '1'
-  imageBebida.src = '../images/cham1.png'
+  imageBebida.src = 'images/cham1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('cafe', 'Café caliente', cantidadBebidas.textContent, precio)
@@ -96,7 +96,7 @@ const saborGuayabaB = document.getElementById('sabor-guayaba')
 saborGuayabaB.addEventListener('click', () => {
   chooseDrinks()
   saborGuayabaB.style.opacity = '1'
-  imageBebida.src = '../images/arro1.png'
+  imageBebida.src = 'images/arro1.png'
   const precio = Number(cantidadBebidas.textContent) * 12
   const product6 = document.getElementById('buyAllProducts6')
   product6.innerHTML = printElementBebidas('cafe', 'Chocolate caliente', cantidadBebidas.textContent,precio)
