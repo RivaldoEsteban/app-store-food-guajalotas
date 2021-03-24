@@ -151,6 +151,13 @@ function changeImgBebidas(img, name) {
   title.textContent = `${name}`
 }
 
+function changeImgTamales(img, name) {
+  const tamalesImg = document.getElementById('header-img-tamal')
+  const title = document.getElementById('product-name-tamal')
+  tamalesImg.src = `images/${img}.png`
+  title.textContent = `${name}`
+}
+
 
 function hiddenProduct() {
   guajolotaProduct.style.display = 'none'

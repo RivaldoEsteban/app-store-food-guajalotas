@@ -174,12 +174,35 @@ p {
   background: white;
   box-sizing: border-box;
   border-radius: 20px;
-  padding: 16px;
+  padding: 12px 8px;
   width: 159px;
+  text-align: center;
+  margin: 10px;
 }
+
+.bebida.buy {
+  border: 2px solid #f8632d;
+}
+
 .bebida-img {
+
+}
+
+.cantidad-champurrado {
+  margin: 0;
+  font-size: 16px;
+  color: #f8632d;
+  font-weight: 600;
+}
+
+.bebida.champurrado{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.agregar-dismuir{
+  font-weight: 400;
 }
 
 .bebida-name{
@@ -201,8 +224,7 @@ p {
 
 .combo-bebidas {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
+  justify-content: center;
 }
 
 .btn-buy-products {
@@ -391,3 +413,4 @@ p {
   border-bottom: 0 ;
   color:  #9A9A9D;
 }
+
