@@ -28,7 +28,6 @@ const arrowLeft = document.getElementById('arrow-left-section-buy') // icono arr
 arrowLeft.addEventListener('click', () => {
   hiddenPage()
   principal.style.display = 'block'
-  window.guajolotas.style.display = 'block'
 })
 
 const buyGuajootas = document.getElementById('btn-guajolota')

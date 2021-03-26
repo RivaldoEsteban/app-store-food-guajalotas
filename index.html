@@ -32,29 +32,29 @@
             <p id="product-bebida">Bebidas</p>
             <p id="product-tamales">Tamales</p>
           </div>
-          <div class="guajolotas-all" id="guajolotas">
-            <div class="product-sell" id="">
+          <div class="guajolotas-all" id="guajolotaProducts">
+            <div class="product-sell" id="principal-guajota-productList-1">
               <img src="images/g-verde.png" alt="guajolota-verde" class="product-img">
               <div>
                 <p class="product-title">Verde</p>
                 <p class="product-price">$25MXN</p>
               </div>
             </div>
-            <div class="product-sell">
+            <div class="product-sell" id="principal-guajota-productList-2">
               <img src="images/g-mole.png" alt="guajolota-verde" class="product-img">
               <div>
                 <p class="product-title">Mole</p>
                 <p class="product-price">$25MXN</p>
               </div>
             </div>
-            <div class="product-sell">
+            <div class="product-sell" id="principal-guajota-productList-3">
               <img src="images/g-pina.png" alt="guajolota-verde" class="product-img">
               <div>
                 <p class="product-title">Piña</p>
                 <p class="product-price">$25MXN</p>
               </div>
             </div>
-            <div class="product-sell">
+            <div class="product-sell" id="principal-guajota-productList-4">
               <img src="images/g-pasas.png" alt="guajolota-verde" class="product-img">
               <div>
                 <p class="product-title">Pasas</p>
@@ -62,67 +62,66 @@
               </div>
             </div>
           </div>
-          <div class="bebidas-all" id="bebidas">
-            <div class="product-sell bebidas" id="">
+          <div class="bebidas-all" id="bebidasProducts">
+            <div class="product-sell bebidas" id="principal-bebidas-producList1">
               <img src="images/champurrado.png" alt="bebida-champurrado" class="product-img">
               <div>
                 <p class="product-title">Champurrado</p>
                 <p class="product-price">$12MXN</p>
               </div>
             </div>
-            <div class="product-sell bebidas" id="">
+            <div class="product-sell bebidas" id="principal-bebidas-producList2">
               <img src="images/arroz.png" alt="bebida-atole" class="product-img">
               <div>
                 <p class="product-title">Atole de Arroz con Leche</p>
                 <p class="product-price">$12MXN</p>
               </div>
             </div>
-            <div class="product-sell bebidas" id="">
+            <div class="product-sell bebidas" id="principal-bebidas-producList3">
               <img src="images/chocolate.png" alt="bebida-chocolate" class="product-img">
               <div>
                 <p class="product-title">Chocolate Caliente</p>
                 <p class="product-price">$12MXN</p>
               </div>
             </div>
-            <div class="product-sell bebidas" id="">
+            <div class="product-sell bebidas" id="principal-bebidas-producList4">
               <img src="images/cafe.png" alt="bebida-cage" class="product-img">
               <div>
                 <p class="product-title">Café Negro</p>
                 <p class="product-price">$12MXN</p>
               </div>
             </div>
-
           </div>
-          <div class="tamales-all" id="tamales">
-            <div class="product-sell tamales" id="">
+          <div class="tamales-all" id="tamalesProducts">
+            <div class="product-sell tamales" id="principal-tamal-producList1">
               <img src="images/ver2.png" alt="bebida-champurrado" class="product-img" width="80px">
               <div>
                 <p class="product-title">Tamal Verde</p>
                 <p class="product-price">$14MXN</p>
               </div>
             </div>
-            <div class="product-sell tamales" id="">
+            <div class="product-sell tamales" id="principal-tamal-producList2">
               <img src="images/mole2.png" alt="bebida-champurrado" class="product-img" width="80px">
               <div>
                 <p class="product-title">Tamal de Mole</p>
                 <p class="product-price">$14MXN</p>
               </div>
             </div>
-            <div class="product-sell tamales" id="">
+            <div class="product-sell tamales" id="principal-tamal-producList3">
               <img src="images/tamal-gua.png" alt="bebida-champurrado" class="product-img" width="80px">
               <div>
                 <p class="product-title">Tamal de Guayaba</p>
                 <p class="product-price">$14MXN</p>
               </div>
             </div>
-            <div class="product-sell tamales" id="">
+            <div class="product-sell tamales" id="principal-tamal-producList4">
               <img src="images/tamal-pina.png" alt="bebida-champurrado" class="product-img" width="80px">
               <div>
                 <p class="product-title">Tamlas de Piña</p>
                 <p class="product-price">$14MXN</p>
               </div>
             </div>
-            <div class="product-sell tamales" id="">
+            <div class="product-sell tamales" id="principal-tamal-producList5">
               <img src="images/tamal-pasas.png" alt="bebida-champurrado" class="product-img" width="80px">
               <div>
                 <p class="product-title">Tamlas de Pasas</p>
@@ -168,18 +167,22 @@
           <p class="combo-description">Selecciona la bebida que más te guste y disfruta de tu desayuno.</p>
           <div class="combo-bebidas-content">
             <div class="combo-bebidas">
-              <div class="bebida" id="box-champurrado">
-                <div class="bebida-img">
+              <label class="bebida champurrado" id="box-champurrado">
+                <div class="bebida-img champurrado">
                   <img src="images/champurrado.png" alt="">
-                  <input type="checkbox" class="checkbox" id="checkbox-champurrado" defaultChecked>
+                  <p class="bebida-name">Champurrado</p>
+                  <p class="bebida-price">+ $12 MXN</p>
                 </div>
-                <p class="bebida-name">Champurrado</p>
-                <p class="bebida-price">+ $12 MXN</p>
-              </div>
+                <div>
+                  <img src="images/menos.png" alt="" width="20px" class="agregar-dismuir" id="disminuir-bebida-champurrado">
+                  <p class="cantidad-champurrado" id="cantidad-champurrado">0</p>
+                  <img src="images/mas.png" alt="" width="20px" class="agregar-dismuir" id="agregar-bebida-champurrado">
+                </div>
+              </label>
               <div class="bebida" id="box-atole">
                 <div class="bebida-img">
                   <img src="images/arroz.png" alt="">
-                  <input type="checkbox" class="checkbox" id="checkbox-atole">
+                  <input type="checkbox" id="check-arroz">
                 </div>
                 <p class="bebida-name">Atole de Arroz</p>
                 <p class="bebida-price">+ $12 MXN</p>
@@ -189,7 +192,7 @@
               <div class="bebida" id="box-chocolate">
                 <div class="bebida-img">
                   <img src="images/chocolate.png" alt="">
-                  <input type="checkbox" class="checkbox" id="checkbox-chocolate">
+                  <input type="checkbox" id="check-chocolate">
                 </div>
                 <p class="bebida-name">Chocolate caliente</p>
                 <p class="bebida-price">+ $12 MXN</p>
@@ -197,7 +200,7 @@
               <div class="bebida" id="box-cafe">
                 <div class="bebida-img">
                   <img src="images/cafe.png" alt="">
-                  <input type="checkbox" class="checkbox" id="checkbox-cafe">
+                  <input type="checkbox" id="check-cafe">
                 </div>
                 <p class="bebida-name">Café negro</p>
                 <p class="bebida-price">+ $12 MXN</p>
@@ -218,7 +221,7 @@
         <img src="images/comprar.png" alt="" id="buy-cart-bebidas">
       </header>
       <div class="hero-title-content">
-        <p id="product-name"> Bebidas <br> de la casa</p>
+        <p id="product-name-bebidas"> Bebidas <br> de la casa</p>
         <p id="product-price-agregado">$12 MXN</p>
       </div>
       <div class="add-product-btn">
@@ -306,7 +309,7 @@
         <img src="images/comprar.png" alt="" id="buy-cart-tamales">
       </header>
       <div class="hero-title-content">
-        <p id="product-name"> Tamales de <br> la casa</p>
+        <p id="product-name-tamal"> Tamales de <br> la casa</p>
         <p id="product-price-agregado">$14 MXN</p>
       </div>
       <div class="add-product-btn">
@@ -421,7 +424,6 @@
       <button class="btn-price" id="buttonBuyCart">Pagar</button>
     </section>
   </div>
-  <script src="./js/change-page.js" type="module"></script>
   <script src="./js/products.js" type="module"></script>
   <script src="./js/guajolota-modal.js" type="module"></script>
   <script src="./js/bebidas-modal.js" type="module"></script>
